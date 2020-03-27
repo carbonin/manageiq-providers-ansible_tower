@@ -32,7 +32,7 @@ class ManageIQ::Providers::AnsibleTower::AutomationManager::MachineCredential < 
       :type       => :choice,
       :label      => N_('Privilege Escalation'),
       :help_text  => N_('Privilege escalation method'),
-      :choices    => ['', 'sudo', 'su', 'pbrun', 'pfexec']
+      :choices    => ['', 'sudo', 'su', 'pbrun', 'pfexec', 'dzdo', 'pmrun', 'runas', 'enable', 'ksu', 'sesu', 'machinectl']
     },
     :become_username => {
       :type       => :string,
